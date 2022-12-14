@@ -11,47 +11,46 @@ body {
 }
 
 .top-nav {
+    position: fixed;
     width: 100%;
     height: 150px;
     display: flex;
     flex-direction: row;
     background-color: #2b2b2b;
-    color: white;   
+    color: white;
+    justify-content: space-between;
 }
 
 .top-left-navigation {
     display: flex;
     flex-direction: row;
-    height: 100%;
-    width: 70%;
+    width: 40%;
+    height: 30%;
     padding: 0;
     margin: 0;
     flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: flex-end;
-    margin-left: 20px;
-    margin-top: 15px;
+    justify-content: space-evenly;
+    margin-top: 100px;
 }
 
 .top-right-navigation {
     height: 100%;
-    width: 30%;
+    width: 40%;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
     margin: 0;
     padding: 0;
-    justify-content: space-between;
     margin-right: 20px;
+    align-items: flex-end;
+    justify-content: space-around;
 }
 
 .main-page {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(4, 1fr) 5fr;
+    grid-template-rows: auto;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    position: relative;
     width: 100%;
     height: 100%;
     padding-left: 30px;
@@ -63,6 +62,7 @@ h1 {
     padding-left: 55px;
     height: 70px;
     margin: 0;
+    margin-top: 140px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -80,27 +80,48 @@ ul li{
     list-style: none;
 }
 
-.grey-style-icon {
+.menu-message,
+.video-message {
     color: #999999;
 }
 
-.pizza-icons,
-.menu-icons,
-.video-icons {
+.menu-message {
+    margin-top: 26px;
+}
+
+.video-message {
+    margin-top: 20px;
+}
+
+.share-button,
+.menu-button,
+.video-button {
     width: 20%;
     display: flex;
     flex-direction: row;
     align-items: center;
     padding-bottom: 15px;
+    background-color: #2b2b2b;
+    border: 0;
+    padding:0;
 }
 
-h4,
-.share {
+h4 {
     margin-left: 10px;
 }
 
-.menu-icons {
-    margin-left: 45px;
+.share-button {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.video-button {
+    display: flex;
+    width: auto;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 70px;
+    cursor: pointer;
 }
 
 .admin-login-info {
@@ -110,6 +131,11 @@ h4,
     justify-content: flex-end;
     align-items: center;
     margin-top: 15px;
+}
+
+.admin-login-button {
+    background-color: #2b2b2b;
+    border: 0;
 }
 
 .admin-username {
@@ -147,7 +173,6 @@ h4,
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
-
 }
 
 .card-img1 {
@@ -180,9 +205,6 @@ h4,
     background-size: cover;
 }
 
-
-
-
 .card-views1 {
     display: flex;
     flex-direction: column;
@@ -191,14 +213,15 @@ h4,
     width: 50px;
 }
 
-h2 {
-    padding:0%;
-    margin: 0%;
+.share-arrow,
+.admin-dropdown {
+    cursor: pointer;
 }
 
+h2,
 p {
     padding:0%;
-    margin: 0%; 
+    margin: 0%;
 }
 
 .button-container {
@@ -216,9 +239,79 @@ p {
 .character-weapon {
     margin-left: 10px;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .views,
 .view-count {
     color: #ffffff;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #a4a4a4;
+    border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    border-radius: 5px;
+}
+
+.menu-list {
+    background-color: #2b2b2b;
+    border: 0;
+}
+
+.admin-login-button ul {
+    margin-top: 8px;
+}
+
+.admin-login-button li {
+    float:left;
+    padding:0px;
+    width:270px;
+}
+
+.admin-login-button li a {
+    line-height:36px;
+}
+
+.list-box {
+    width: 150px;
+}
+
+.admin-login-button li ul {
+    background:none;
+    display:none;
+    height:auto;
+    padding:0px;
+    margin:0px;
+    border:0px;
+    position:absolute;
+    width:241px;
+    z-index:201;
+}
+.admin-login-button li:hover ul {
+    display:block;
 }
