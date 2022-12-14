@@ -8,20 +8,28 @@
   </head>
   <body>
     <header class="top-nav">
-        <ul class="top-left-navigation">
-            <div class="pizza-icons">
-                <img class="share" src="assets/share.png" alt="share image" width="20px" height="20px">
-                <h4>SHARE YOUR PIZZA</h4>
+        <section class="top-left-navigation">
+            <button class="share-button">
+                <img class="share" src="assets/share.png" alt="share image" height="20px">
+                <h4>SHARE</h4>
+            </button>
+            <menu class="menu-button">
+            <div class="dropdown">
+                <button class="menu-list"><img class="menu" src="assets/menu.png" alt="menu icon" height="30px"></button>
+                <div class="dropdown-content">
+                    <a href="#">Eat Pizza</a>
+                    <a href="#">Fight the Foot Clan</a>
+                    <a href="#">Hang with Splinter</a>
+                </div>
             </div>
-            <div class="menu-icons">
-                <img class="menu" src="assets/menu.png" alt="menu icon" width="30px" height="30px">
-                <h4 class="grey-style-icon">COWABUNGA</h4>
-            </div>
-            <div class="video-icons">
-                <img  class="videos" src="assets/login.png" alt="login icon" width="20px" height="20px">
-                <h4 class="grey-style-icon">KARATE VIDEOS</h4>
-            </div>
-        </ul>
+            <h4 class="menu-message">COWABUNGA</h4>
+            </menu>
+
+            <button class="video-button">
+                <img  class="videos" src="assets/login.png" alt="login icon" height="20px">
+                <h4 class="video-message">KARATE VIDEOS</h4>
+            </button>
+        </section>
         <article class="top-right-navigation">
             <div class="admin-login-info">
                 <img class="admin-login" src="assets/login.png" alt="login icon" width="20px" height="20px">
@@ -60,7 +68,7 @@
             <section class="top-card-section1">
                 <article class="card-img2">
                     <button class="button-container" type="submit">
-                        <img src="assets/share-arrow.png" alt="buttonpng" />
+                        <img src="assets/share-arrow.png" alt="share icon" />
                     </button>
                     <article class="card-views1">
                         <p class="views">Slices</p>
