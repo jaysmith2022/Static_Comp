@@ -17,7 +17,6 @@ body {
     flex-direction: row;
     background-color: #2b2b2b;
     color: white;   
-    ;
 }
 
 .top-left-navigation {
@@ -30,6 +29,8 @@ body {
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: flex-end;
+    margin-left: 20px;
+    margin-top: 15px;
 }
 
 .top-right-navigation {
@@ -41,6 +42,7 @@ body {
     margin: 0;
     padding: 0;
     justify-content: space-between;
+    margin-right: 20px;
 }
 
 .main-page {
@@ -70,9 +72,7 @@ h1 {
 .full-card {
     height: 400px;
     width: 300px;
-    border: 2px solid;
     margin: 15px;
-    padding: 5px;
     box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 30%);
 }
 
@@ -109,6 +109,7 @@ h4,
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    margin-top: 15px;
 }
 
 .admin-username {
@@ -120,4 +121,104 @@ h4,
 .logo {
     height: 110px;
     width: 180px;
+}
+
+.top-card-section1 {
+    width: 100%;
+    height: 40%;
+}
+
+.bottom-card-section1 {
+    width: 100%;
+    background-color: #ffffff;
+    padding-top: 10px;
+    height: 57%;
+}
+
+.card-img1,
+.card-img2, 
+.card-img3,
+.card-img4,
+.card-img5,
+.card-img6 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+
+.card-img1 {
+    background-image: url(assets/classy-leo.jpg);
+    background-size: cover;
+}
+
+.card-img2 {
+    background-image: url(assets/classy-raphael.jpg);
+    background-size: cover;
+}
+
+.card-img3 {
+    background-image: url(assets/classy-donatello.jpg);
+    background-size: cover;
+}
+
+.card-img4 {
+    background-image: url(assets/classy-michelangelo.jpg);
+    background-size: cover;
+}
+
+.card-img5 {
+    background-image: url(assets/masterSplinter.jpg);
+    background-size: cover;
+}
+
+.card-img6 {
+    background-image: url(assets/casey_jones.jpg);
+    background-size: cover;
+}
+
+
+
+
+.card-views1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    width: 50px;
+}
+
+h2 {
+    padding:0%;
+    margin: 0%;
+}
+
+p {
+    padding:0%;
+    margin: 0%; 
+}
+
+.button-container {
+    margin-top: 15px;
+    width: 20%;
+    display: flex;
+    border: 0;
+    margin-right: 73%;
+    background: 0;
+}
+
+.turtle-name,
+.character-info1,
+.character-color,
+.character-weapon {
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.views,
+.view-count {
+    color: #ffffff;
 }
